@@ -3,8 +3,8 @@
 This is a strictly conforming C89 implementation of the [Skipjack
 cipher][w] ([PDF][p], [HTML][h]) as an embeddable, single-file header
 library. Keys are 80 bits long, blocks are 64 bits wide, 31 of 32 rounds
-have long been broken, and there is no key schedule. Only encryption is
-implemented in this library since that's sufficient for analysis, it's
+have long been broken, and there is no key setup. Only the encryption
+function is implemented since that's sufficient for analysis, it's
 enough to operate in CTR mode, and I really didn't feel like working out
 decryption. The library is optimized for compactness and correctness,
 not performance.
